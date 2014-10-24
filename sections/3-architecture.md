@@ -31,6 +31,8 @@ component depends on too many things, that's *code smell*. If a
 component depends on hard to initialize arguments, that's also *code
 smell*. Don't hide painful things under the rug, fix it instead.
 
+That's true, but in my opinion it's orthogonal to DI in general. You can use DI having only few dependencies, why not? What's the difference between e.g. constructor injection and cake when you have few (say max 2) dependencies for each component?
+
 ### 3.2. MUST NOT put things in Play's Global
 
 I'm seeing this over and over again.
